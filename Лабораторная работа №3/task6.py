@@ -8,6 +8,6 @@ for i, current_num in enumerate(list_numbers):
         max_num = current_num
         max_index = i
 
-list_numbers[-1] = max_num
-list_numbers[max_index] = 25
+list_numbers[-1], list_numbers[max_index] = max_num, current_num
+
 print(list_numbers)  # Ответ [2, 90, -2, 8, -36, -44, -1, -85, -14, 25, -22, -90, -100, -8, 38, -92, -45, 67, 53, 90]
