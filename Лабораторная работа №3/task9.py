@@ -5,9 +5,9 @@ increase = 0.03  # рост цен
 
 money_capital = 0  # количество денег, чтобы прожить 10 месяцев
 
-while months != 0:
-    months -= 1
-    money_capital += spend - salary
+for i in range(0, months):
+    money_capital += spend
     spend *= 1 + increase
+money_capital -= salary * months
 
 print(round(money_capital))
