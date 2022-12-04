@@ -1,10 +1,10 @@
 def get_count_char(str_):
     str_dict = {}
-    DEFAULT_COUNT = 0
+    default_count = 0
 
     for word in str_.lower():
         if word.isalpha():
-            str_dict[word] = str_dict.get(word, DEFAULT_COUNT) + 1
+            str_dict[word] = str_dict.get(word, default_count) + 1
 
     return str_dict
 
